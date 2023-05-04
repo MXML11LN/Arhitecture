@@ -1,23 +1,31 @@
 ﻿using System;
-using CodeBase.Infrastructure.StateMachine.States;
 
-namespace CodeBase.Infrastructure.StateMachine
+namespace CodeBase.Infrastructure.StateMachine.States
 {
-    public class LoadLevelState : IState
+    public class LoadLevelState : IPayloadedState<string>
     {
+        private readonly GameStateMachine _gameStateMachine;
+        private readonly SceneLoader _sceneLoader;
+
         public LoadLevelState(GameStateMachine gameStateMachine, SceneLoader sceneLoader)
         {
-            throw new NotImplementedException();
+            _gameStateMachine = gameStateMachine;
+            _sceneLoader = sceneLoader;
         }
 
-        public void Enter()
+        public void Enter(string sceneName )
         {
-            throw new NotImplementedException();
+            _sceneLoader.LoadScene(sceneName , onLoaded: OnLoaded);
+        }
+
+        private void OnLoaded()
+        {
+            
         }
 
         public void Exit()
         {
-            throw new NotImplementedException();
+           
         }
     }
 }

@@ -1,29 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
+using CodeBase.Infrastructure.StateMachine.States;
+using Zenject;
 
 namespace CodeBase.Infrastructure.StateMachine
 {
     public class GameStateMachine : IGameStateMachine
     {
-        private readonly Dictionary<Type,IState> _states;
-        private IState _currentState;
-
-        public GameStateMachine()
+        private readonly Dictionary<Type,IExitableState> _states;
+        private IExitableState _currentState;
+        
+        [Inject]
+        public GameStateMachine(SceneLoader sceneLoader)
         {
-            _states = new Dictionary<Type, IState>();
+            _states = new Dictionary<Type, IExitableState>()
+            {
+                [typeof(BootstrapState)] = new BootstrapState(this,sceneLoader),
+                [typeof(LoadLevelState)] = new LoadLevelState(this,sceneLoader),
+            };
         }
 
-        public void RegisterStates(IState state)
+        public void Enter<TState,TPayload>( TPayload payload) where TState : class, IPayloadedState<TPayload>
         {
-            
-        }
-
-        public void Enter<TState>() where TState : IState
-        {
-            _currentState?.Exit();
-            IState state = _states[typeof(TState)];
-            state.Enter();
+            TState state = ChangeState<TState>();
             _currentState = state;
         }
+
+        public void Enter<TState>() where TState : class, IState
+        {
+            IState state = ChangeState<TState>();
+            state.Enter();
+        }
+
+        private TState ChangeState<TState>() where TState : class, IExitableState
+        {
+            _currentState?.Exit();
+            TState state = CastState<TState>();
+            _currentState = state;
+            return state;
+        }
+
+        private TState CastState<TState>() where TState : class, IExitableState => 
+            _states[typeof(TState)] as TState;
     }
 }
