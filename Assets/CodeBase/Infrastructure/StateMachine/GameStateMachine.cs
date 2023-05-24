@@ -23,7 +23,7 @@ namespace CodeBase.Infrastructure.StateMachine
         public void Enter<TState,TPayload>( TPayload payload) where TState : class, IPayloadedState<TPayload>
         {
             TState state = ChangeState<TState>();
-            _currentState = state;
+            state.Enter(payload);
         }
 
         public void Enter<TState>() where TState : class, IState
