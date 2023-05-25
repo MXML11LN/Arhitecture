@@ -1,6 +1,7 @@
-﻿using Zenject;
+﻿using CodeBase.Infrastructure.StateMachine.States;
+using Zenject;
 
-namespace CodeBase.Infrastructure.StateMachine.States
+namespace CodeBase.Infrastructure.StateMachine
 {
     public class StateMachineInitializer : IInitializable
     {
@@ -26,7 +27,6 @@ namespace CodeBase.Infrastructure.StateMachine.States
             _stateMachine.RegisterState(_bootstrapState);
             _stateMachine.RegisterState(_loadLevelState);
             _stateMachine.RegisterState(_gameLoopState);
-            
             _stateMachine.Enter<BootstrapState>();
         }
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace CodeBase.Infrastructure.StateMachine
+namespace CodeBase.Infrastructure
 {
     public class SceneLoader
     {

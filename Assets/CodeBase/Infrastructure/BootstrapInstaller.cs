@@ -1,3 +1,4 @@
+using CodeBase.AssetManagement;
 using CodeBase.Factory;
 using CodeBase.Infrastructure.StateMachine;
 using CodeBase.Infrastructure.StateMachine.States;
@@ -12,6 +13,7 @@ namespace CodeBase.Infrastructure
         public override void InstallBindings()
         {
             Container.BindInterfacesTo<BootstrapInstaller>().FromInstance(this).AsSingle();
+            BindAssetProvider();
             BindGameFactory();
             BindLoadingCurtain(); 
             BindGameStateMachineAndStates();
@@ -23,6 +25,8 @@ namespace CodeBase.Infrastructure
         {
            
         }
+
+        private void BindAssetProvider() => Container.Bind<IAssetProvider>().To<AssetProvider>().AsSingle();
 
         private void BindGameFactory() => 
             Container.Bind<IGameFactory>().To<GameFactory>().AsSingle();
