@@ -10,15 +10,13 @@ namespace CodeBase.Infrastructure.StateMachine
         private readonly Dictionary<Type,IExitableState> _states;
         private IExitableState _currentState;
         
-        [Inject]
-        public GameStateMachine(SceneLoader sceneLoader)
+        public GameStateMachine()
         {
-            _states = new Dictionary<Type, IExitableState>()
-            {
-                [typeof(BootstrapState)] = new BootstrapState(this,sceneLoader),
-                [typeof(LoadLevelState)] = new LoadLevelState(this,sceneLoader),
-            };
+            _states = new Dictionary<Type, IExitableState>();
         }
+
+        public void RegisterState(IExitableState state) => 
+            _states.Add(state.GetType(),state);
 
         public void Enter<TState,TPayload>( TPayload payload) where TState : class, IPayloadedState<TPayload>
         {
