@@ -1,3 +1,4 @@
+using CodeBase.Infrastructure.Services.Input;
 using CodeBase.Infrastructure.StateMachine;
 using CodeBase.Infrastructure.StateMachine.States;
 using Zenject;
@@ -11,6 +12,7 @@ namespace CodeBase.Infrastructure
             Container.BindInterfacesTo<BootstrapInstaller>().FromInstance(this).AsSingle();
             BindGameStateMachine();
             BindSceneLoader();
+            Container.Bind<IInputService>().To<StandAloneInput>().AsSingle().NonLazy();
         }
 
         public void Initialize() => 
