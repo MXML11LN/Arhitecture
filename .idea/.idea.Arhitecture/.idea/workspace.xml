@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cc0e9-0186-4cf0-9900-ac5fdc4289c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/AssetManagement.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/AssetManagement/AssetProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/AssetManagement/AssetProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/AssetManagement/IAssetProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/AssetManagement/IAssetProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/AssetManagement/AssetPath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/AssetManagement/AssetPath.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/SceneLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/SceneLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/SceneLoader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/StateMachineInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/StateMachineInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/StateMachineInitializer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/StateMachineInitializer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LoadingCurtain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/LoadingCurtain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LoadingCurtain.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/LoadingCurtain.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +95,7 @@
       <workItem from="1683122849026" duration="11807000" />
       <workItem from="1684763712049" duration="2234000" />
       <workItem from="1684913766967" duration="2915000" />
-      <workItem from="1685000684899" duration="13579000" />
+      <workItem from="1685000684899" duration="15120000" />
     </task>
     <servers />
   </component>
