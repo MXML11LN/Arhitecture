@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cc0e9-0186-4cf0-9900-ac5fdc4289c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/DataExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/DataExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/PlayerProgress.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/PlayerProgress.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/PositionOnLevel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/PositionOnLevel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/Vector3Data.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/Vector3Data.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/WorldData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/WorldData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadProgressState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadProgressState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/PersistentProgress.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/PersistentProgress/IPersistentProgressService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/PersistentProgress/IPersistentProgressService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/PersistentProgress/ISavedProgress.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/PersistentProgress/ISavedProgress.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/PersistentProgress/PersistentProgressService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/PersistentProgress/PersistentProgressService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/ISaveLoadService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/ISaveLoadService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/SaveLoadService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/SaveLoadService.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/StateMachineInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/StateMachineInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/DataExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/DataExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Factory/IGameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Factory/IGameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/SaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/SaveLoadService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +96,7 @@
       <workItem from="1683122849026" duration="11807000" />
       <workItem from="1684763712049" duration="2234000" />
       <workItem from="1684913766967" duration="2915000" />
-      <workItem from="1685000684899" duration="22932000" />
+      <workItem from="1685000684899" duration="26175000" />
     </task>
     <servers />
   </component>
