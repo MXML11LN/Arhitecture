@@ -3,6 +3,8 @@ using CodeBase.Factory;
 using CodeBase.Infrastructure.StateMachine;
 using CodeBase.Infrastructure.StateMachine.States;
 using CodeBase.Services.Input;
+using CodeBase.Services.PersistentProgress;
+using CodeBase.Services.SaveLoad;
 using Zenject;
 using Application = UnityEngine.Application;
 
@@ -21,6 +23,8 @@ namespace CodeBase.Infrastructure
             BindGameStateMachineAndStates();
             BindSceneLoader();
             BindInputService();
+            BindProgress();
+            BindSaveLoad();
         }
 
         private void BindInputService()
@@ -93,6 +97,21 @@ namespace CodeBase.Infrastructure
             Container
                 .BindInterfacesAndSelfTo<GameLoopState>()
                 .AsTransient();
+            Container
+                .BindInterfacesAndSelfTo<LoadProgressState>()
+                .AsTransient();
+            
         }
+
+        private void BindProgress() => Container
+            .Bind<IPersistentProgressService>()
+            .To<PersistentProgressService>()
+            .AsSingle();
+
+        private void BindSaveLoad() => 
+            Container
+                .Bind<ISaveLoadService>()
+                .To<SaveLoadService>()
+                .AsSingle();
     }
 }

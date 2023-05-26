@@ -22,7 +22,7 @@ namespace CodeBase.Infrastructure.StateMachine.States
 
         private void EnterLoadLevel()
         {
-            _gameStateMachine.Enter<LoadLevelState,string>("Main");
+            _gameStateMachine.Enter<LoadProgressState>();
         }
 
         public void Exit()
