@@ -2,46 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cc0e9-0186-4cf0-9900-ac5fdc4289c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/Tools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/Tools.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UnityExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UnityExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMoveToPlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMoveToPlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AnimateAlongAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AnimateAlongAgent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyAnimator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyAnimator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/CameraLogic/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/CameraLogic/CameraFollow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadProgressState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadProgressState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/SaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/SaveLoadService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsAllDirections.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsAllDirections.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsHorizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsHorizontal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsVertical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsVertical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/DpadMultiplePieces.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/DpadMultiplePieces.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/DpadOnePiece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/DpadOnePiece.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/Joystick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/Joystick.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/SteeringWheel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/SteeringWheel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/floor_material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/floor_material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_hair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_hair.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_low_troll_body_mat_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_low_troll_body_mat_AlbedoTransparency.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_stone_mace.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_stone_mace.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_tanga.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_tanga.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/shaders/Standard Two Sided Soft Blend.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/shaders/Standard Two Sided Soft Blend.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/!LabelHolder.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/!LabelHolder.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/ground.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_black.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_black_Std.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_black_Std.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Readme_spider.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Readme_spider.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Factory/IGameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Factory/IGameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/animation_controller/troll_anim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/animation_controller/troll_anim.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/meshes/troll_.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/meshes/troll_.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/HeroController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/HeroController.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,22 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.build.unityPlugin",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\MAX\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\MAX\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\MAX\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\MAX\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\MAX\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\MAX\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Unity.exe" />
@@ -131,7 +108,7 @@
       <workItem from="1684763712049" duration="2234000" />
       <workItem from="1684913766967" duration="2915000" />
       <workItem from="1685000684899" duration="26298000" />
-      <workItem from="1685346855289" duration="8183000" />
+      <workItem from="1685346855289" duration="18277000" />
     </task>
     <servers />
   </component>
@@ -153,5 +130,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

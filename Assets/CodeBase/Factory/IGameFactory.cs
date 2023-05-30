@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CodeBase.Services.PersistentProgress;
 using UnityEngine;
 
@@ -11,5 +12,7 @@ namespace CodeBase.Factory
         void CleanUp();
         List<ISavedProgressReader> ProgressReaders { get; }
         List<ISavedProgress> ProgressWriters { get; }
+        GameObject Hero { get; }
+        public event Action HeroCreated;
     }
 }

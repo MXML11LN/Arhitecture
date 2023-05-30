@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CodeBase.AssetManagement;
 using CodeBase.Services.PersistentProgress;
 using UnityEngine;
@@ -11,6 +12,8 @@ namespace CodeBase.Factory
         private readonly IAssetProvider _assets;
         public List<ISavedProgressReader> ProgressReaders { get; } = new List<ISavedProgressReader>();
         public List<ISavedProgress> ProgressWriters { get; } = new List<ISavedProgress>();
+        public GameObject Hero { get; set;}
+        public event Action HeroCreated;
 
         [Inject]
         public GameFactory(IAssetProvider assetProvider)
@@ -18,8 +21,12 @@ namespace CodeBase.Factory
             _assets = assetProvider;
         }
 
-        public GameObject CreateHero(GameObject at) => 
-            InstantiateRegistered(AssetPath.HeroPrefabPath, at.transform.position);
+        public GameObject CreateHero(GameObject at)
+        {
+            Hero = InstantiateRegistered(AssetPath.HeroPrefabPath, at.transform.position);
+            HeroCreated?.Invoke();
+            return Hero;
+        }
 
         public GameObject CreateHUD() =>
             InstantiateRegistered(AssetPath.HUDPrefabPath);
