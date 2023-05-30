@@ -32,8 +32,9 @@ namespace CodeBase.Factory
 
         private GameObject InstantiateRegistered(string prefabPath, Vector3 at)
         {
-            RegisterProgressWatchers(_assets.Instantiate(prefabPath, at));
-            return _assets.Instantiate(prefabPath, at);
+            GameObject gameObject = _assets.Instantiate(prefabPath, at);
+            RegisterProgressWatchers(gameObject);
+            return gameObject;
         }
 
         private GameObject InstantiateRegistered(string prefabPath)

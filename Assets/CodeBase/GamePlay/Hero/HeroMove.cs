@@ -53,7 +53,7 @@ namespace CodeBase.GamePlay.Hero
         private void Warp(Vector3Data to)
         {
             controller.enabled = false;
-            transform.position = to.AsUnityVector3();
+            transform.position = to.AsUnityVector3().AddY(controller.height/2);
             controller.enabled = true;
         }
 

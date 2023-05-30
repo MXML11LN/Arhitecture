@@ -25,7 +25,7 @@ namespace CodeBase.Services.SaveLoad
             foreach (ISavedProgress progressWriter in _gameFactory.ProgressWriters)
                 progressWriter.UpdateProgress(_progressService.Progress);
 
-            PlayerPrefs.GetString(ProgressKey, _progressService.Progress.ToJson());
+            PlayerPrefs.SetString(ProgressKey, _progressService.Progress.ToJson());
         }
 
         public PlayerProgress LoadProgress() =>

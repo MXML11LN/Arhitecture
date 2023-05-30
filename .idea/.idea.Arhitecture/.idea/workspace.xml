@@ -2,12 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cc0e9-0186-4cf0-9900-ac5fdc4289c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/Tools.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/Tools.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UnityExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UnityExtensions.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/DataExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/DataExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Factory/IGameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Factory/IGameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadProgressState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadProgressState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/SaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Services/SaveLoad/SaveLoadService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsAllDirections.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsAllDirections.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsHorizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsHorizontal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsVertical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/ArrowsVertical.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/DpadMultiplePieces.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/DpadMultiplePieces.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/DpadOnePiece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/DpadOnePiece.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/Joystick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/Joystick.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/SteeringWheel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/Prefabs/SteeringWheel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/floor_material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/floor_material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_hair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_hair.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_low_troll_body_mat_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_low_troll_body_mat_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_stone_mace.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_stone_mace.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_tanga.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/materials/troll_tanga.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/shaders/Standard Two Sided Soft Blend.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/shaders/Standard Two Sided Soft Blend.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/!LabelHolder.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/!LabelHolder.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_black_Std.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Materials/spider_black_Std.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Readme_spider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/fantasySpider/Readme_spider.html.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +130,8 @@
       <workItem from="1683122849026" duration="11807000" />
       <workItem from="1684763712049" duration="2234000" />
       <workItem from="1684913766967" duration="2915000" />
-      <workItem from="1685000684899" duration="26175000" />
+      <workItem from="1685000684899" duration="26298000" />
+      <workItem from="1685346855289" duration="8183000" />
     </task>
     <servers />
   </component>

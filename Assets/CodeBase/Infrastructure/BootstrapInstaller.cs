@@ -112,6 +112,6 @@ namespace CodeBase.Infrastructure
             Container
                 .Bind<ISaveLoadService>()
                 .To<SaveLoadService>()
-                .AsSingle();
+                .AsSingle().NonLazy();
     }
 }

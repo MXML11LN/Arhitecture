@@ -1,6 +1,7 @@
 ﻿using CodeBase.Data.Progress;
 using CodeBase.Services.PersistentProgress;
 using CodeBase.Services.SaveLoad;
+using UnityEngine;
 using Zenject;
 
 namespace CodeBase.Infrastructure.StateMachine.States
@@ -32,10 +33,12 @@ namespace CodeBase.Infrastructure.StateMachine.States
 
         private void LoadProgressOrInitNew() =>
             _progressService.Progress =
-                _saveLoadService.LoadProgress()
-                ??  NewProgress();
+                _saveLoadService.LoadProgress() ??  NewProgress();
 
-        private PlayerProgress NewProgress() => 
-            new PlayerProgress("Main");
+        private PlayerProgress NewProgress()
+        {
+            Debug.Log("New progress");
+            return new PlayerProgress("Main");
+        }
     }
 }
