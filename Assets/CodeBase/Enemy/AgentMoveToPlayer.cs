@@ -5,7 +5,7 @@ using Zenject;
 
 namespace CodeBase.Enemy
 {
-    public class AgentMoveToPlayer : MonoBehaviour
+    public class AgentMoveToPlayer : Follow
     {
         public NavMeshAgent agent;
         public Transform heroTransform;

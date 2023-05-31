@@ -3250,6 +3250,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5493170092211230995, guid: 8caff780e3287bc47a6b0a8d00c9b931,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 279
+      objectReference: {fileID: 0}
     - target: {fileID: 5493170092211230998, guid: 8caff780e3287bc47a6b0a8d00c9b931,
         type: 3}
       propertyPath: offsetY
@@ -3282,7 +3287,7 @@ PrefabInstance:
     - target: {fileID: 5918746893121960751, guid: 30ecf33fa6d6c81489ab8052c12ae6bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.085729
+      value: 18.77
       objectReference: {fileID: 0}
     - target: {fileID: 5918746893121960751, guid: 30ecf33fa6d6c81489ab8052c12ae6bc,
         type: 3}
@@ -3292,7 +3297,7 @@ PrefabInstance:
     - target: {fileID: 5918746893121960751, guid: 30ecf33fa6d6c81489ab8052c12ae6bc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.702386
+      value: 35.2
       objectReference: {fileID: 0}
     - target: {fileID: 5918746893121960751, guid: 30ecf33fa6d6c81489ab8052c12ae6bc,
         type: 3}
