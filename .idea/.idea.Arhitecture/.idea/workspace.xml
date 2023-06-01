@@ -2,33 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cc0e9-0186-4cf0-9900-ac5fdc4289c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/HeroState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/HeroState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroHealth.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroHealth.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/HpBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/HpBar.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Attack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Attack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/CheckAttackRange.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/CheckAttackRange.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/EnemyHealth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/EnemyHealth.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroDeath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroDeath.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/IHealth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/IHealth.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/PlayerProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/PlayerProgress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMoveToPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/AgentMoveToPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AgentMoveToPlayer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/AgentMoveToPlayer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Aggro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Aggro.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Aggro.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Aggro.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AnimateAlongAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/AnimateAlongAgent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/AnimateAlongAgent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/AnimateAlongAgent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/EnemyAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/EnemyAnimator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/EnemyAnimator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Follow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Follow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/Follow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Follow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/TriggerObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/TriggerObserver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Enemy/TriggerObserver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/TriggerObserver.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Factory/GameFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadProgressState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/StateMachine/States/LoadProgressState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr spikes impact ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr spikes impact ab.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr spikes impact dissolve hdr ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr spikes impact dissolve hdr ab.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch trait ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch trait ab.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water drop blur anim ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water drop blur anim ab.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water foam ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water foam ab.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water small splash stretch nosp ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water small splash stretch nosp ab.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/meshes/troll_.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/meshes/troll_.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/HeroController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/HeroController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/death.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/death.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/troll.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/troll.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Desktop/UnityProjects/Knight_RPG_adventure/Assets/Architecture/CodeBase/Enemy/Attack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/UnityProjects/Knight_RPG_adventure/Assets/Architecture/CodeBase/Enemy/CheckAttackRange.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/UnityProjects/Knight_RPG_adventure/Assets/Architecture/CodeBase/Logic/IHealth.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/UnityProjects/WW1TowerDefence/Assets/CodeBaseTD/BootStrapInstaller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/LoadingCurtain.cs" root0="FORCE_HIGHLIGHTING" />
@@ -121,7 +124,7 @@
       <workItem from="1685000684899" duration="26298000" />
       <workItem from="1685346855289" duration="19555000" />
       <workItem from="1685523548352" duration="4191000" />
-      <workItem from="1685606172705" duration="4170000" />
+      <workItem from="1685606172705" duration="12807000" />
     </task>
     <servers />
   </component>

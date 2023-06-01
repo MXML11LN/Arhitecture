@@ -9,15 +9,19 @@ namespace CodeBase.UI
         private HeroHealth _heroHealth;
 
         private void OnDestroy() => 
-            _heroHealth.HealthChangerd -= UpdateHpBar;
+            _heroHealth.HealthChangedEvent -= UpdateHpBar;
 
         public void Construct(HeroHealth heroHealth)
         {
             _heroHealth = heroHealth;
-            _heroHealth.HealthChangerd += UpdateHpBar;
+            _heroHealth.HealthChangedEvent += UpdateHpBar;
         }
 
-        private void UpdateHpBar() => 
-            hpBar.SetValue(_heroHealth.CurrentHP,_heroHealth.MaxHP);
+        private void UpdateHpBar()
+        {
+            
+            Debug.Log($"current{_heroHealth.CurrentHp},max{_heroHealth.MaxHp}");
+            hpBar.SetValue(_heroHealth.CurrentHp, _heroHealth.MaxHp);
+        }
     }
 }

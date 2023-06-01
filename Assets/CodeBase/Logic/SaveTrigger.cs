@@ -1,5 +1,4 @@
-﻿using System;
-using CodeBase.Services.SaveLoad;
+﻿using CodeBase.Services.SaveLoad;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Zenject;

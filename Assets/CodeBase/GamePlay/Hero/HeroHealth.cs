@@ -1,18 +1,19 @@
 ﻿using System;
 using CodeBase.Data.Progress;
+using CodeBase.Logic;
 using CodeBase.Services.PersistentProgress;
 using UnityEngine;
 
 namespace CodeBase.GamePlay.Hero
 {
     [RequireComponent(typeof(HeroAnimator))]
-    public class HeroHealth : MonoBehaviour, ISavedProgress
+    public class HeroHealth : MonoBehaviour,IHealth, ISavedProgress
     {
         private HeroState _heroState;
         public HeroAnimator heroAnimator;
-        public event Action HealthChangerd;
-
-        public float CurrentHP
+        public event Action HealthChangedEvent;
+        
+        public float CurrentHp
         {
             get => _heroState.CurrentHp;
             set
@@ -20,41 +21,40 @@ namespace CodeBase.GamePlay.Hero
                 if (_heroState.CurrentHp != value)
                 {
                     _heroState.CurrentHp = value;
-                    HealthChangerd?.Invoke();
+                    HealthChangedEvent?.Invoke();
                 }
                 
             }
         }
-
-        public float MaxHP
+        public float MaxHp
         {
             get => _heroState.MaxHp;
             set
             {
                 _heroState.MaxHp = value;
-                HealthChangerd?.Invoke();
+                HealthChangedEvent?.Invoke();
             }
         }
 
         public void TakeDamage(float damage)
         {
-            if (CurrentHP <= 0)
+            if (CurrentHp <= 0)
                 return;
 
-            CurrentHP -= damage;
+            CurrentHp -= damage;
             heroAnimator.PlayHit();
         }
 
         public void LoadProgress(PlayerProgress progress)
         {
             _heroState = progress.HeroState;
-            HealthChangerd?.Invoke();
+            HealthChangedEvent?.Invoke();
         }
 
         public void UpdateProgress(PlayerProgress progress)
         {
-            progress.HeroState.CurrentHp = CurrentHP;
-            progress.HeroState.MaxHp = MaxHP;
+            progress.HeroState.CurrentHp = CurrentHp;
+            progress.HeroState.MaxHp = MaxHp;
         }
     }
 }

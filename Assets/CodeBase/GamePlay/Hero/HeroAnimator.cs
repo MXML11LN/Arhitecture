@@ -11,7 +11,7 @@ namespace CodeBase.GamePlay.Hero
 
         private static readonly int MoveHash = Animator.StringToHash("Velocity");
         private static readonly int AttackHash = Animator.StringToHash("Attack");
-        private static readonly int ComboHash = Animator.StringToHash("Combo");
+        private static readonly int AttackStrong = Animator.StringToHash("AttackStrong");
         private static readonly int HitHash = Animator.StringToHash("Damage");
         private static readonly int DieHash = Animator.StringToHash("Die");
         private static readonly int BlockHash = Animator.StringToHash("Block");
@@ -19,10 +19,10 @@ namespace CodeBase.GamePlay.Hero
 
         private readonly int _idleStateFullHash = Animator.StringToHash("Base Layer.Idle");
         private readonly int _attackStateHash = Animator.StringToHash("Slash");
-        private readonly int _comboAttackStateHash = Animator.StringToHash("Strong Attack");
+        private readonly int _comboAttackStateHash = Animator.StringToHash("attack");
         private readonly int _blockStateHash = Animator.StringToHash("Block");
-        private readonly int _walkingStateHash = Animator.StringToHash("Run");
-        private readonly int _deathStateHash = Animator.StringToHash("Death");
+        private readonly int _walkingStateHash = Animator.StringToHash("Moving");
+        private readonly int _deathStateHash = Animator.StringToHash("death");
         private readonly int _idleStateHash = Animator.StringToHash("Idle");
         private readonly int _jumpStateHash = Animator.StringToHash("Jump");
 
@@ -49,7 +49,7 @@ namespace CodeBase.GamePlay.Hero
             _animator.SetTrigger(AttackHash);
 
         public void PlayComboAttack() =>
-            _animator.SetTrigger(ComboHash);
+            _animator.SetTrigger(AttackStrong);
 
         public void PlayBlock(bool blockStatus) =>
             _animator.SetBool(BlockHash,blockStatus);
