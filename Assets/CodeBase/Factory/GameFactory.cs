@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using CodeBase.AssetManagement;
+using CodeBase.GamePlay.Hero;
 using CodeBase.Services.PersistentProgress;
+using CodeBase.UI;
 using UnityEngine;
 using Zenject;
 
@@ -28,7 +30,7 @@ namespace CodeBase.Factory
             return Hero;
         }
 
-        public GameObject CreateHUD() =>
+        public GameObject CreateHUD() => 
             InstantiateRegistered(AssetPath.HUDPrefabPath);
 
         public void CleanUp()

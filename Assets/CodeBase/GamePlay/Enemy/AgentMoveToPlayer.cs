@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
 
-namespace CodeBase.Enemy
+namespace CodeBase.GamePlay.Enemy
 {
     public class AgentMoveToPlayer : Follow
     {

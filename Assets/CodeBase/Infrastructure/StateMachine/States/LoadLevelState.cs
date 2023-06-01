@@ -1,6 +1,8 @@
 ﻿using CodeBase.CameraLogic;
 using CodeBase.Factory;
+using CodeBase.GamePlay.Hero;
 using CodeBase.Services.PersistentProgress;
+using CodeBase.UI;
 using UnityEngine;
 using Zenject;
 
@@ -58,7 +60,14 @@ namespace CodeBase.Infrastructure.StateMachine.States
         {
             GameObject hero = _gameFactory.CreateHero(GameObject.FindGameObjectWithTag("InitialPoint"));
             CameraFollow(hero);
-            _gameFactory.CreateHUD();
+            InitHud(hero);
+        }
+
+        private void InitHud(GameObject hero)
+        {
+            HeroHealth health = hero.GetComponent<HeroHealth>();
+            GameObject hud = _gameFactory.CreateHUD();
+            hud.GetComponentInChildren<ActorUI>().Construct(health);
         }
     }
 }

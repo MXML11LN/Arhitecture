@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace CodeBase.Enemy
+namespace CodeBase.GamePlay.Enemy
 {
     [RequireComponent(typeof(NavMeshAgent), typeof(EnemyAnimator))]
     public class AnimateAlongAgent : MonoBehaviour

@@ -37,8 +37,11 @@ namespace CodeBase.Infrastructure.StateMachine.States
 
         private PlayerProgress NewProgress()
         {
-            Debug.Log("New progress");
-            return new PlayerProgress("Main");
+            PlayerProgress progress = new PlayerProgress("Main");
+
+            progress.HeroState.MaxHp = 100f;
+            progress.HeroState.ResetHP();
+            return progress;
         }
     }
 }
