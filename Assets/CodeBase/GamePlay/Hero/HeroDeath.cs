@@ -1,4 +1,6 @@
 ﻿using System;
+using CodeBase.Data.Progress;
+using CodeBase.Services.PersistentProgress;
 using UnityEngine;
 
 namespace CodeBase.GamePlay.Hero
@@ -12,6 +14,7 @@ namespace CodeBase.GamePlay.Hero
         public HeroAnimator heroAnimator;
         public GameObject deathFX;
         private bool _isDead;
+        public HeroAttack heroAttack;
 
         private void Start()
         {
@@ -35,8 +38,10 @@ namespace CodeBase.GamePlay.Hero
             _isDead = true;
             heroMove.enabled = false;
             characterController.enabled = false;
+            heroAttack.enabled = false;
             heroAnimator.PlayDeath();
             Instantiate(deathFX, transform.position,Quaternion.identity);
         }
+        
     }
 }

@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cc0e9-0186-4cf0-9900-ac5fdc4289c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Attack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Attack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/CheckAttackRange.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/CheckAttackRange.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/EnemyHealth.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/EnemyHealth.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroDeath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroDeath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/IHealth.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/IHealth.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/SaveTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/ActorUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr spikes impact ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr spikes impact ab.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr spikes impact dissolve hdr ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr spikes impact dissolve hdr ab.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch trait ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch trait ab.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water drop blur anim ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water drop blur anim ab.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water foam ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water foam ab.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water small splash stretch nosp ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FX/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr water small splash stretch nosp ab.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/meshes/troll_.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/meshes/troll_.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/HeroController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/HeroController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/death.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/death.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/troll.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/troll.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +98,7 @@
       <workItem from="1685000684899" duration="26298000" />
       <workItem from="1685346855289" duration="19555000" />
       <workItem from="1685523548352" duration="4191000" />
-      <workItem from="1685606172705" duration="12807000" />
+      <workItem from="1685606172705" duration="13073000" />
     </task>
     <servers />
   </component>

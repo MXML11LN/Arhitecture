@@ -41,6 +41,8 @@ namespace CodeBase.Infrastructure.StateMachine.States
 
             progress.HeroState.MaxHp = 100f;
             progress.HeroState.ResetHP();
+            progress.HeroStats.Damage = 25f;
+            progress.HeroStats.AttackRadius = .7f;
             return progress;
         }
     }
