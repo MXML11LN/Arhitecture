@@ -17,13 +17,13 @@ namespace CodeBase.GamePlay.Hero
         private static readonly int BlockHash = Animator.StringToHash("Block");
         private static readonly int JumpHash = Animator.StringToHash("Jump");
 
-        private readonly int _idleStateFullHash = Animator.StringToHash("Base Layer.Idle");
-        private readonly int _attackStateHash = Animator.StringToHash("Slash");
-        private readonly int _comboAttackStateHash = Animator.StringToHash("attack");
+        private readonly int _idleStateFullHash = Animator.StringToHash("Base Layer.idle");
+        private readonly int _attackStateHash = Animator.StringToHash("slash");
+        private readonly int _strongAttackStateHash = Animator.StringToHash("attack");
         private readonly int _blockStateHash = Animator.StringToHash("Block");
         private readonly int _walkingStateHash = Animator.StringToHash("Moving");
         private readonly int _deathStateHash = Animator.StringToHash("death");
-        private readonly int _idleStateHash = Animator.StringToHash("Idle");
+        private readonly int _idleStateHash = Animator.StringToHash("idle");
         private readonly int _jumpStateHash = Animator.StringToHash("Jump");
 
 
@@ -63,6 +63,7 @@ namespace CodeBase.GamePlay.Hero
         public void EnteredState(int stateHash)
         {
             State = StateFor(stateHash);
+            Debug.Log($"{State}");
             StateEntered?.Invoke(State);
         }
 
@@ -79,7 +80,7 @@ namespace CodeBase.GamePlay.Hero
             {
                 state = AnimatorState.Idle;
             }
-            else if (stateHash == _attackStateHash || stateHash == _comboAttackStateHash)
+            else if (stateHash == _attackStateHash || stateHash == _strongAttackStateHash)
             {
                 state = AnimatorState.Attack;
             }

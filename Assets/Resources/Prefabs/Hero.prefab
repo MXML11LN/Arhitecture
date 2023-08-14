@@ -1957,6 +1957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 6379844417018913517}
   movementSpeed: 6
+  Animator: {fileID: 6379844417018913516}
 --- !u!114 &5982350490143212099
 MonoBehaviour:
   m_ObjectHideFlags: 0

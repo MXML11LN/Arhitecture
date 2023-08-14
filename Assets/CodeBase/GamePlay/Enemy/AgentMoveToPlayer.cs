@@ -10,6 +10,7 @@ namespace CodeBase.GamePlay.Enemy
         public NavMeshAgent agent;
         public Transform heroTransform;
         private IGameFactory _gameFactory;
+        public EnemyDeath Death;
 
         [Inject]
         public void Construct(IGameFactory gameFactory)
@@ -27,7 +28,7 @@ namespace CodeBase.GamePlay.Enemy
 
         private void Update()
         {
-            if(heroTransform!=null && IsHeroReached())
+            if(heroTransform!=null && IsHeroReached() && !Death.IsDead)
                 agent.destination = heroTransform.position;
         }
 

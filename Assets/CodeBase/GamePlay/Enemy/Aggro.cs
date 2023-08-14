@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using CodeBase.Logic.Animator;
 using UnityEngine;
 
 namespace CodeBase.GamePlay.Enemy
@@ -11,7 +12,7 @@ namespace CodeBase.GamePlay.Enemy
         public float chaseCoolDown = 3f;
         private Coroutine _agroCoroutine;
         private bool _hasAggroTarget;
-
+        public EnemyDeath Death;
         private void Start()
         {
             observer.TriggerEnter += TriggerEnter;
@@ -21,7 +22,8 @@ namespace CodeBase.GamePlay.Enemy
 
         private void TriggerEnter(Collider obj)
         {
-            if (!_hasAggroTarget)
+            
+            if (!_hasAggroTarget  )
             {
                 _hasAggroTarget = true;
                 StopAggroCoroutine();

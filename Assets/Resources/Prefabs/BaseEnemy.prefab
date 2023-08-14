@@ -264,6 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 6453505258380079192}
   heroTransform: {fileID: 0}
+  Death: {fileID: 535348417104975539}
 --- !u!114 &9136962502207482704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +295,7 @@ MonoBehaviour:
   observer: {fileID: 8621141625101260436}
   follow: {fileID: 95309134083615859}
   chaseCoolDown: 2
+  Death: {fileID: 0}
 --- !u!114 &1676815121086258372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +362,7 @@ MonoBehaviour:
   DeathFxPrefab: {fileID: 1280141305896002, guid: e473029e4c70ad543a6879b82a732f4f,
     type: 3}
   deathTime: 3
+  IsDead: 0
 --- !u!114 &439890975599649422
 MonoBehaviour:
   m_ObjectHideFlags: 0

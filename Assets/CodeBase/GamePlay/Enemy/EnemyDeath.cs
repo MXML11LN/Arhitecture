@@ -12,6 +12,7 @@ namespace CodeBase.GamePlay.Enemy
         public GameObject DeathFxPrefab;
         [SerializeField]private float deathTime = 3f;
         public event Action Happened;
+        public bool IsDead;
 
         private void Start() => 
             health.HealthChangedEvent+= HealthChangedEvent;
@@ -29,6 +30,7 @@ namespace CodeBase.GamePlay.Enemy
 
         private void Die()
         {
+            IsDead = true;
             health.HealthChangedEvent -= HealthChangedEvent;
             enemyAnimator.PlayDeath();
             enemyFollow.enabled = false;

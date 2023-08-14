@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cc0e9-0186-4cf0-9900-ac5fdc4289c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/meshes/troll_.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/meshes/troll_.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/EnemySpawnerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/EnemySpawnerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/UniqueIdEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Editor/UniqueIdEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/Spawn.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/Spawn/EnemySpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/Spawn/EnemySpawner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/Spawn/MonsterTypeId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/Spawn/MonsterTypeId.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/Spawn/UniqueId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/Spawn/UniqueId.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arhitecture/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/PlayerProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Data/Progress/PlayerProgress.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/AgentMoveToPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/AgentMoveToPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Aggro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/Aggro.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/EnemyDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Enemy/EnemyDeath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/GamePlay/Hero/HeroMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Logic/Animator/AnimatorStateReporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Logic/Animator/AnimatorStateReporter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/animation_controller/troll_anim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Monsters/cave_troll/animation_controller/troll_anim.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/HeroController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/HeroController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/attack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/attack.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/slash.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Palladin/animations/slash.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/BaseEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/BaseEnemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/troll.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/troll.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +46,7 @@
     <setting file="file://$USER_HOME$/Desktop/UnityProjects/WW1TowerDefence/Assets/CodeBaseTD/BootStrapInstaller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Infrastructure/BootstrapInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CodeBase/LoadingCurtain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CodeBase/Logic/LookAtCamera.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -99,6 +130,22 @@
       <workItem from="1685346855289" duration="19555000" />
       <workItem from="1685523548352" duration="4191000" />
       <workItem from="1685606172705" duration="13073000" />
+      <workItem from="1686293753708" duration="10998000" />
+      <workItem from="1687184428357" duration="650000" />
+      <workItem from="1687256041503" duration="3535000" />
+      <workItem from="1687263784801" duration="2228000" />
+      <workItem from="1687268640766" duration="1119000" />
+      <workItem from="1687332721888" duration="3676000" />
+      <workItem from="1687424085949" duration="1658000" />
+      <workItem from="1687504684927" duration="611000" />
+      <workItem from="1688976153066" duration="1044000" />
+      <workItem from="1689058868157" duration="1197000" />
+      <workItem from="1689146905207" duration="10093000" />
+      <workItem from="1689232528297" duration="603000" />
+      <workItem from="1689318269442" duration="2370000" />
+      <workItem from="1689579768908" duration="1301000" />
+      <workItem from="1689665189054" duration="7568000" />
+      <workItem from="1689749016203" duration="2729000" />
     </task>
     <servers />
   </component>

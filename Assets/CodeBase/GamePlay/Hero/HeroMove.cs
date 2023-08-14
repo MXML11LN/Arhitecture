@@ -12,6 +12,7 @@ namespace CodeBase.GamePlay.Hero
         public CharacterController controller;
         public float movementSpeed;
         private IInputService _inputService;
+        public HeroAnimator Animator;
 
         [Inject]
         public void Construct(IInputService inputService)
@@ -22,7 +23,8 @@ namespace CodeBase.GamePlay.Hero
         private void Update()
         {
             Vector3 movementVector = Vector3.zero;
-            if (_inputService.Axis.sqrMagnitude > Constants.Epsilon)
+            
+            if (_inputService.Axis.sqrMagnitude > Constants.Epsilon && !Animator.IsAttacking)
             {
                 movementVector = Camera.main.transform.TransformDirection(_inputService.Axis);
                 movementVector.y = 0;
