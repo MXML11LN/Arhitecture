@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16e6920c3e34f73a68be1a55d5f6359, type: 3}
+  m_Name: TrollMonsterData
+  m_EditorClassIdentifier: 
+  TypeId: 0
+  Hp: 100
+  Damage: 20
+  AttackCoolDown: 3
+  Clevage: 3
+  EffectiveDistance: 2.91
+  moveSpeed: 5
+  MonsterPrefab: {fileID: 3516696188842262393, guid: a53e37b4b51c50f499f2826f7ff9c81a,
+    type: 3}

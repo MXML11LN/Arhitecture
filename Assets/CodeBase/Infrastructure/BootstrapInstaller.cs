@@ -5,6 +5,7 @@ using CodeBase.Infrastructure.StateMachine.States;
 using CodeBase.Services.Input;
 using CodeBase.Services.PersistentProgress;
 using CodeBase.Services.SaveLoad;
+using CodeBase.Services.StaticData;
 using Zenject;
 using Application = UnityEngine.Application;
 
@@ -25,6 +26,7 @@ namespace CodeBase.Infrastructure
             BindInputService();
             BindProgress();
             BindSaveLoad();
+            BindStaticData();
         }
 
         private void BindInputService()
@@ -100,7 +102,6 @@ namespace CodeBase.Infrastructure
             Container
                 .BindInterfacesAndSelfTo<LoadProgressState>()
                 .AsTransient();
-            
         }
 
         private void BindProgress() => Container
@@ -112,6 +113,12 @@ namespace CodeBase.Infrastructure
             Container
                 .Bind<ISaveLoadService>()
                 .To<SaveLoadService>()
+                .AsSingle().NonLazy();
+
+        private void BindStaticData() => 
+            Container
+                .Bind<IStaticDataService>()
+                .To<StaticDataService>()
                 .AsSingle().NonLazy();
     }
 }

@@ -25,7 +25,7 @@ namespace CodeBase.Editor
             var textColor = Color.white;
             var anchor = Vector2.up * 4;
             var textSize = 20f;
-            string text = spawner.MonsterTypeId.ToString();
+            string text = spawner.monsterTypeId.ToString();
             var pos = spawner.transform.position;
             var view = SceneView.currentDrawingSceneView;
             if (!view)

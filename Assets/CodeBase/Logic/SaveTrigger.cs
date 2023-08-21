@@ -1,6 +1,5 @@
 ﻿using CodeBase.Services.SaveLoad;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Zenject;
 
 namespace CodeBase.Logic
@@ -15,6 +14,7 @@ namespace CodeBase.Logic
         {
             _saveLoadService = saveLoadService;
         }
+        
 
         private void OnTriggerEnter(Collider other)
         {

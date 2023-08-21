@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace CodeBase.Data.Progress
 {
@@ -20,11 +19,5 @@ namespace CodeBase.Data.Progress
             HeroStats = new HeroStats();
             KillData = new KillData();
         }
-    }
-
-    [Serializable]
-    public class KillData
-    {
-        public List<string> ClearedSpawners = new List<string>();
     }
 }

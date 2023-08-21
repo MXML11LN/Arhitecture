@@ -1,4 +1,5 @@
 ﻿using CodeBase.GamePlay.Enemy;
+using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase.UI
@@ -6,8 +7,13 @@ namespace CodeBase.UI
     public class EnemyUI : MonoBehaviour
     {
         public HpBar hpBar;
-        public EnemyHealth enemyHealth;
+        private IHealth enemyHealth;
 
+        public void Construct(IHealth health)
+        {
+            enemyHealth = health;
+        }
+        
         private void Start()
         {
             enemyHealth.HealthChangedEvent += UpdateHpBar;

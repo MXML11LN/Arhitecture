@@ -1,6 +1,7 @@
 ﻿using CodeBase.CameraLogic;
 using CodeBase.Factory;
 using CodeBase.GamePlay.Hero;
+using CodeBase.Logic.Spawn;
 using CodeBase.Services.PersistentProgress;
 using CodeBase.UI;
 using UnityEngine;
@@ -15,6 +16,8 @@ namespace CodeBase.Infrastructure.StateMachine.States
         private readonly LoadingCurtain _curtain;
         private readonly IGameFactory _gameFactory;
         private readonly IPersistentProgressService _progressService;
+        private const string EnemySpawnerTag = "EnemySpawner";
+        private const string InitialPointTag = "InitialPoint";
 
         [Inject]
         public LoadLevelState(IGameStateMachine gameStateMachine, SceneLoader sceneLoader,LoadingCurtain curtain,IGameFactory gameFactory,IPersistentProgressService progressService)
@@ -51,16 +54,27 @@ namespace CodeBase.Infrastructure.StateMachine.States
             _curtain.Hide();
         }
 
-        private void CameraFollow( GameObject gameObject) =>
+        private void CameraFollow(GameObject gameObject) =>
             Camera.main
                 .GetComponent<CameraFollow>()
                 .Follow(gameObject);
 
         private void InitGameWorld()
         {
-            GameObject hero = _gameFactory.CreateHero(GameObject.FindGameObjectWithTag("InitialPoint"));
+
+            InitSpawners();
+            GameObject hero = _gameFactory.CreateHero(GameObject.FindGameObjectWithTag(InitialPointTag));
             CameraFollow(hero);
             InitHud(hero);
+        }
+
+        private void InitSpawners()
+        {
+            foreach (GameObject spawnerGameObject in GameObject.FindGameObjectsWithTag(EnemySpawnerTag))
+            {
+                EnemySpawner spawner = spawnerGameObject.GetComponent<EnemySpawner>();
+                _gameFactory.Register(spawner);
+            }
         }
 
         private void InitHud(GameObject hero)

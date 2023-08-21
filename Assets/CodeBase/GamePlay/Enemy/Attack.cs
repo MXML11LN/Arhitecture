@@ -1,10 +1,6 @@
-﻿using System;
-using System.Linq;
-using CodeBase.Factory;
+﻿using System.Linq;
 using CodeBase.Logic;
-using UnityEditor;
 using UnityEngine;
-using Zenject;
 
 namespace CodeBase.GamePlay.Enemy
 {
@@ -17,9 +13,7 @@ namespace CodeBase.GamePlay.Enemy
         public float EffectiveDistance = 2f;
         public int damage = 20;
         public GameObject attackFx;
-
         public EnemyAnimator enemyAnimator;
-        private IGameFactory _gameFactory;
         private Transform _heroTransform;
         
         private int _layerMask;
@@ -28,11 +22,9 @@ namespace CodeBase.GamePlay.Enemy
         private bool _attackIsActive;
         private Collider[] _hits = new Collider[1];
         
-        [Inject]
-        public void Construct(IGameFactory gameFactory)
+        public void Construct(Transform heroTransform)
         {
-            _gameFactory = gameFactory;
-            _gameFactory.HeroCreated += OnHeroCreated;
+            _heroTransform = heroTransform;
             _layerMask = 1 << LayerMask.NameToLayer("Player");
         }
 
@@ -94,10 +86,7 @@ namespace CodeBase.GamePlay.Enemy
         {
             return transform.position.AddY(0.5f) + transform.forward * EffectiveDistance;
         }
-
-        private void OnHeroCreated() => 
-            _heroTransform = _gameFactory.Hero.transform;
-
+        
         private bool Hit(out Collider hit)
         {
             int hitCount = Physics.OverlapSphereNonAlloc(StartPoint(), Clevage, _hits, _layerMask);
