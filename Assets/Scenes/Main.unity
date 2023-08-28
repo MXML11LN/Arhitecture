@@ -3276,12 +3276,12 @@ PrefabInstance:
     - target: {fileID: 2539155217300074014, guid: f959d4572dc5d7342a4e5e3c0a668a93,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -9.33
       objectReference: {fileID: 0}
     - target: {fileID: 2539155217300074014, guid: f959d4572dc5d7342a4e5e3c0a668a93,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2539155217300074014, guid: f959d4572dc5d7342a4e5e3c0a668a93,
         type: 3}
@@ -3401,7 +3401,7 @@ PrefabInstance:
     - target: {fileID: 5493170092211230995, guid: 8caff780e3287bc47a6b0a8d00c9b931,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 311
+      value: 2359
       objectReference: {fileID: 0}
     - target: {fileID: 5493170092211230998, guid: 8caff780e3287bc47a6b0a8d00c9b931,
         type: 3}

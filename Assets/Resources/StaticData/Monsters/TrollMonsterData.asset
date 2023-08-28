@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: TrollMonsterData
   m_EditorClassIdentifier: 
   TypeId: 0
-  Hp: 100
+  maxLoot: 3
+  minLoot: 20
+  Hp: 30
   Damage: 20
   AttackCoolDown: 3
   Clevage: 3

@@ -6,6 +6,10 @@ namespace CodeBase.Services.StaticData
     public class MonsterStaticData : ScriptableObject
     {
         public MonsterTypeId TypeId;
+        [Range(1,10)]
+        public int maxLoot = 1;
+        [Range(10,100)]
+        public int minLoot=10;
         
         [Range(1,1000)]
         public int Hp;

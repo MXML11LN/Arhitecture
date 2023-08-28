@@ -4,6 +4,7 @@ using CodeBase.Infrastructure.StateMachine;
 using CodeBase.Infrastructure.StateMachine.States;
 using CodeBase.Services.Input;
 using CodeBase.Services.PersistentProgress;
+using CodeBase.Services.Random;
 using CodeBase.Services.SaveLoad;
 using CodeBase.Services.StaticData;
 using Zenject;
@@ -27,6 +28,7 @@ namespace CodeBase.Infrastructure
             BindProgress();
             BindSaveLoad();
             BindStaticData();
+            BindRandomService();
         }
 
         private void BindInputService()
@@ -120,5 +122,11 @@ namespace CodeBase.Infrastructure
                 .Bind<IStaticDataService>()
                 .To<StaticDataService>()
                 .AsSingle().NonLazy();
+
+        private void BindRandomService() => 
+            Container
+                .Bind<IRandomService>()
+                .To<RandomService>()
+                .AsSingle();
     }
 }

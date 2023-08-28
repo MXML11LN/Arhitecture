@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CodeBase.GamePlay.Enemy;
 using CodeBase.Services.PersistentProgress;
 using CodeBase.Services.StaticData;
 using UnityEngine;
@@ -14,6 +15,6 @@ namespace CodeBase.Factory
         List<ISavedProgress> ProgressWriters { get; }
         void Register(ISavedProgressReader progressReader);
         GameObject CreateMonster(MonsterTypeId monsterTypeId, Transform parent);
-        GameObject CreateLoot();
+        LootPiece CreateLoot();
     }
 }

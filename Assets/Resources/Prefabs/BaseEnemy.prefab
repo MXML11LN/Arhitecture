@@ -362,7 +362,7 @@ MonoBehaviour:
   enemyFollow: {fileID: 95309134083615859}
   DeathFxPrefab: {fileID: 1280141305896002, guid: e473029e4c70ad543a6879b82a732f4f,
     type: 3}
-  deathTime: 3
+  deathTime: 1.5
   IsDead: 0
 --- !u!114 &439890975599649422
 MonoBehaviour:
