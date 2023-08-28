@@ -376,7 +376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpBar: {fileID: 2665633936946333963}
-  enemyHealth: {fileID: 2621185332624645831}
 --- !u!1 &7921011924513135713
 GameObject:
   m_ObjectHideFlags: 0
