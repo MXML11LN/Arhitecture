@@ -54,6 +54,8 @@ namespace CodeBase.Factory
             monster.GetComponent<AgentMoveToPlayer>().Construct(Hero.transform);
             monster.GetComponent<NavMeshAgent>().speed = monsterData.moveSpeed;
             
+            monster.GetComponentInChildren<LootSpawner>().Construct(this);
+            
             Attack attack = monster.GetComponent<Attack>();
             attack.Construct(Hero.transform);
             attack.Clevage = monsterData.Clevage;
@@ -69,12 +71,8 @@ namespace CodeBase.Factory
             ProgressWriters.Clear();
         }
 
-        private GameObject InstantiateRegistered(string prefabPath, Vector3 at)
-        {
-            GameObject gameObject = _assets.Instantiate(prefabPath, at);
-            RegisterProgressWatchers(gameObject);
-            return gameObject;
-        }
+        public GameObject CreateLoot() => 
+            InstantiateRegistered(AssetPath.Loot);
 
         private GameObject InstantiateRegistered(string prefabPath)
         {
@@ -94,6 +92,13 @@ namespace CodeBase.Factory
         {
             foreach (ISavedProgressReader progressReader in gameObject.GetComponentsInChildren<ISavedProgressReader>())
                 Register(progressReader);
+        }
+
+        private GameObject InstantiateRegistered(string prefabPath, Vector3 at)
+        {
+            GameObject gameObject = _assets.Instantiate(prefabPath, at);
+            RegisterProgressWatchers(gameObject);
+            return gameObject;
         }
     }
 }

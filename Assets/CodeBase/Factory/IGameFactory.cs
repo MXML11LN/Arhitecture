@@ -14,5 +14,6 @@ namespace CodeBase.Factory
         List<ISavedProgress> ProgressWriters { get; }
         void Register(ISavedProgressReader progressReader);
         GameObject CreateMonster(MonsterTypeId monsterTypeId, Transform parent);
+        GameObject CreateLoot();
     }
 }
