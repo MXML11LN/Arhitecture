@@ -12,9 +12,9 @@ namespace CodeBase.GamePlay.Hero
         private HeroState _heroState;
         public HeroAnimator heroAnimator;
         public event Action HealthChangedEvent;
-        
+
         public float CurrentHp
-        {
+        {   
             get => _heroState.CurrentHp;
             set
             {
@@ -26,6 +26,7 @@ namespace CodeBase.GamePlay.Hero
                 
             }
         }
+
         public float MaxHp
         {
             get => _heroState.MaxHp;

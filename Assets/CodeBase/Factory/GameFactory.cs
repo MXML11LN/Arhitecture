@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using CodeBase.AssetManagement;
-using CodeBase.Data.Progress;
 using CodeBase.GamePlay.Enemy;
-using CodeBase.GamePlay.Hero;
 using CodeBase.Logic;
 using CodeBase.Services.PersistentProgress;
 using CodeBase.Services.Random;
@@ -45,6 +42,8 @@ namespace CodeBase.Factory
         {
             GameObject hudGameObject = InstantiateRegistered(AssetPath.HUDPrefabPath);
             hudGameObject.GetComponent<ActorUI>().Construct(Hero.GetComponent<IHealth>());
+            LootCounter counter = hudGameObject.GetComponentInChildren<LootCounter>();
+            counter.Construct(_progressService.Progress.WorldData);
             return hudGameObject;
         }
 
